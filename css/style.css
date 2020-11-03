@@ -1469,7 +1469,7 @@ button.second:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 50px;
+    margin-top: 0px;
   }
 
   .section__main .container__main .main__info {
@@ -1515,7 +1515,7 @@ button.second:hover {
   }
 
   .section__about {
-    margin-top: 50px;
+    margin-top: 150px;
   }
 
   .section__about .container__about {
