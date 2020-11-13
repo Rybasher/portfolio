@@ -4,69 +4,49 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kirill Leontev</title>
+	<title>Gulp</title>
 	<link rel="stylesheet" href="css/style.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-	<header class="header">
-	<div class="header__row">
-		<div class="header__logo">
-			<div class="logo__img"></div>
-			<div class="logo__text">
-				<p>Kirill Leontev</p>
-				<small>web developer</small>
-			</div>
-		</div>
-		<nav class="header__menu menu">
-			<div class="menu__body">
-				<ul class="menu__list">
-					<li><a href="" class="menu__link">work</a></li>
-					<li><a href="" class="menu__link">about me</a></li>
-					<li><a href="" class="menu__link">blog</a></li>
-					<li><a href="" class="menu__link">contact</a></li>
-				</ul>
-			</div>
-			<button>HIRE ME</button>
-			<div class="menu__icon icon__menu">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</nav>
-
-	</div>
-</header>
+	@@include("_header.html")
 	<main>
-		<section class="section__main section">
+		<section class="section__main section" id="main">
 			<div class="container__main container">
 
 				<div class="main__info">
-					<h1>Hello, I'm <br>
+					<h1 class="anim-items">Hello, I'm <br>
 						<span class="name">Kirill Leontev</span>
 					</h1>
 					<small>web developer</small>
-					<p>
+					<p class="anim-items">
 						I have extensive experience in website development. I will help you create a website for your
 						business, company, or personal brand. I will do it efficiently, quickly and most importantly, you will
 						immediately increase the result
 					</p>
 					<div class="social__medias">
-						<div class="social__item" id="inst">
-							<picture><source srcset="img/icons/instagram.webp" type="image/webp"><img src="img/icons/instagram.png" alt=""></picture>
+						<div class="social__item anim-side" id="inst">
+							<img src="img/icons/instagram.png" alt="">
 						</div>
-						<div class="social__item" id="facebook">
-							<picture><source srcset="img/icons/fb.webp" type="image/webp"><img src="img/icons/fb.png" alt=""></picture>
+						<div class="social__item anim-side" id="facebook">
+							<img src="img/icons/fb.png" alt="">
 						</div>
-						<div class="social__item" id="in">
-							<picture><source srcset="img/icons/in.webp" type="image/webp"><img src="img/icons/in.png" alt=""></picture>
+						<div class="social__item anim-side" id="in">
+							<img src="img/icons/in.png" alt="">
 						</div>
 
 					</div>
-					<div class="buttons">
-						<button class="first">Hire me</button>
-						<button class="second">See my resume</button>
+					<div class="buttons anim-side">
+						<button class="first">
+
+							Hire me
+						</button>
+						<button class="second">
+							<span class="hover"></span>
+							<span class="text">See my resume</span>
+						</button>
 					</div>
 				</div>
 
@@ -76,10 +56,11 @@
 				</div>
 			</div>
 		</section>
-		<section class="section__portfolio section">
+		<section class="section__portfolio section" id="portfolio">
 			<div class="container__portfolio container">
 				<div class="portfolio__header">
-					<nav class="hedaer__nav">
+					<h1 class="section__title anim-items">Portfolio</h1>
+					<nav class="hedaer__nav anim-items">
 						<button>all</button>
 						<button>App</button>
 						<button>Website</button>
@@ -87,14 +68,14 @@
 					</nav>
 				</div>
 				<div class="portfolio__body">
-					<div class="item">
+					<div class="item anim-items">
 						<div class="item__header">
 							<div class="img">
-								<picture><source srcset="img/sites/Screenshot_1.webp" type="image/webp"><img src="img/sites/Screenshot_1.png" alt=""></picture>
+								<img src="img/sites/Screenshot_1.png" alt="">
 							</div>
 							<div class="hover">
 								<div class="hover__info">
-									<h2>Project Title</h2>
+									<!-- <h2>Project Title</h2> -->
 									<button>Look ></button>
 								</div>
 							</div>
@@ -108,14 +89,14 @@
 						</div>
 
 					</div>
-					<div class="item">
+					<div class="item anim-items">
 						<div class="item__header">
 							<div class="img">
-								<picture><source srcset="img/sites/Screenshot_1.webp" type="image/webp"><img src="img/sites/Screenshot_1.png" alt=""></picture>
+								<img src="img/sites/Screenshot_1.png" alt="">
 							</div>
 							<div class="hover">
 								<div class="hover__info">
-									<h2>Project Title</h2>
+									<!-- <h2>Project Title</h2> -->
 									<button>Look ></button>
 								</div>
 							</div>
@@ -129,14 +110,14 @@
 						</div>
 
 					</div>
-					<div class="item">
+					<div class="item anim-items">
 						<div class="item__header">
 							<div class="img">
-								<picture><source srcset="img/sites/Screenshot_1.webp" type="image/webp"><img src="img/sites/Screenshot_1.png" alt=""></picture>
+								<img src="img/sites/Screenshot_1.png" alt="">
 							</div>
 							<div class="hover">
 								<div class="hover__info">
-									<h2>Project Title</h2>
+									<!-- <h2>Project Title</h2> -->
 									<button>Look ></button>
 								</div>
 							</div>
@@ -150,14 +131,14 @@
 						</div>
 
 					</div>
-					<div class="item">
+					<div class="item anim-items">
 						<div class="item__header">
 							<div class="img">
-								<picture><source srcset="img/sites/Screenshot_1.webp" type="image/webp"><img src="img/sites/Screenshot_1.png" alt=""></picture>
+								<img src="img/sites/Screenshot_1.png" alt="">
 							</div>
 							<div class="hover">
 								<div class="hover__info">
-									<h2>Project Title</h2>
+									<!-- <h2>Project Title</h2> -->
 									<button>Look ></button>
 								</div>
 							</div>
@@ -171,14 +152,14 @@
 						</div>
 
 					</div>
-					<div class="item">
+					<div class="item anim-items">
 						<div class="item__header">
 							<div class="img">
-								<picture><source srcset="img/sites/Screenshot_1.webp" type="image/webp"><img src="img/sites/Screenshot_1.png" alt=""></picture>
+								<img src="img/sites/Screenshot_1.png" alt="">
 							</div>
 							<div class="hover">
 								<div class="hover__info">
-									<h2>Project Title</h2>
+									<!-- <h2>Project Title</h2> -->
 									<button>Look ></button>
 								</div>
 							</div>
@@ -192,14 +173,14 @@
 						</div>
 
 					</div>
-					<div class="item">
+					<div class="item anim-items">
 						<div class="item__header">
 							<div class="img">
-								<picture><source srcset="img/sites/Screenshot_1.webp" type="image/webp"><img src="img/sites/Screenshot_1.png" alt=""></picture>
+								<img src="img/sites/Screenshot_1.png" alt="">
 							</div>
 							<div class="hover">
 								<div class="hover__info">
-									<h2>Project Title</h2>
+									<!-- <h2>Project Title</h2> -->
 									<button>Look ></button>
 								</div>
 							</div>
@@ -213,14 +194,14 @@
 						</div>
 
 					</div>
-					<div class="item">
+					<div class="item anim-items">
 						<div class="item__header">
 							<div class="img">
-								<picture><source srcset="img/sites/Screenshot_1.webp" type="image/webp"><img src="img/sites/Screenshot_1.png" alt=""></picture>
+								<img src="img/sites/Screenshot_1.png" alt="">
 							</div>
 							<div class="hover">
 								<div class="hover__info">
-									<h2>Project Title</h2>
+									<!-- <h2>Project Title</h2> -->
 									<button>Look ></button>
 								</div>
 							</div>
@@ -234,14 +215,14 @@
 						</div>
 
 					</div>
-					<div class="item">
+					<div class="item anim-items">
 						<div class="item__header">
 							<div class="img">
-								<picture><source srcset="img/sites/Screenshot_1.webp" type="image/webp"><img src="img/sites/Screenshot_1.png" alt=""></picture>
+								<img src="img/sites/Screenshot_1.png" alt="">
 							</div>
 							<div class="hover">
 								<div class="hover__info">
-									<h2>Project Title</h2>
+									<!-- <h2>Project Title</h2> -->
 									<button>Look ></button>
 								</div>
 							</div>
@@ -255,14 +236,14 @@
 						</div>
 
 					</div>
-					<div class="item">
+					<div class="item anim-items">
 						<div class="item__header">
 							<div class="img">
-								<picture><source srcset="img/sites/Screenshot_1.webp" type="image/webp"><img src="img/sites/Screenshot_1.png" alt=""></picture>
+								<img src="img/sites/Screenshot_1.png" alt="">
 							</div>
 							<div class="hover">
 								<div class="hover__info">
-									<h2>Project Title</h2>
+									<!-- <h2>Project Title</h2> -->
 									<button>Look ></button>
 								</div>
 							</div>
@@ -278,11 +259,14 @@
 					</div>
 				</div>
 				<div class="portfolio__footer">
-					<button>LOAD MORE WORK</button>
+					<button class="slow__hover anim-side">
+						<span class="hover"></span>
+						<span class="text">load more works</span>
+					</button>
 				</div>
 			</div>
 		</section>
-		<section class="section__about section">
+		<section class="section__about section" id="about">
 			<div class="container__about container">
 				<div class="about__designer-photo">
 					<div class="bg"></div>
@@ -294,9 +278,10 @@
 				<div class="about__designer-description">
 
 					<div class="description__header">
-						<h1>ABOUT ME</h1>
-						<p class="who">WHO AM I</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus.
+						<h1 class="anim-items">ABOUT ME</h1>
+						<p class="who anim-items">WHO AM I</p>
+						<p class="anim-items">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque
+							eu enim eget luctus.
 							Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem,
 							elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus
 							leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis
@@ -308,15 +293,20 @@
 							Nunc ultrices urna eu nunc lobortis pulvinar. Duis viverra, quam non imperdiet scelerisque, urna
 							nunc consequat velit, in mollis erat nibh in libero.</p>
 					</div>
-					<div class="description__footer">
+					<div class="description__footer anim-side">
 						<button class="first">Hire me</button>
-						<button class="second">See my resume</button>
+						<button class="second">
+							<span class="hover"></span>
+							<span class="text">See my resume</span>
+						</button>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section__reviews section">
-			<div class="reviews slider">
+		<section class="section__reviews section" id="review">
+			<h1 class="section__title anim-items">reviews</h1>
+
+			<div class="reviews slider anim-items">
 
 				<div class="review__item">
 					<div class="item__header">
@@ -332,11 +322,35 @@
 							<p>Edward M. Brooks</p>
 							<small>Marketing House</small>
 							<div class="stars">
-								<picture><source srcset="img/half_star.webp" type="image/webp"><img src="img/half_star.png" alt=""></picture>
-								<picture><source srcset="img/half_star.webp" type="image/webp"><img src="img/half_star.png" alt=""></picture>
-								<picture><source srcset="img/half_star.webp" type="image/webp"><img src="img/half_star.png" alt=""></picture>
-								<picture><source srcset="img/half_star.webp" type="image/webp"><img src="img/half_star.png" alt=""></picture>
-								<picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture>
+								<img src="img/half_star.png" alt="">
+								<img src="img/half_star.png" alt="">
+								<img src="img/half_star.png" alt="">
+								<img src="img/half_star.png" alt="">
+								<img src="img/star.png" alt="">
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="review__item">
+					<div class="item__header">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus.
+							Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem,
+							elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus
+							leo. Praesent dui sapien, bibendum quis tempus dictum.</p>
+					</div>
+
+					<div class="item__footer anim-side">
+						<div class="item__center "></div>
+						<div class="footer__info">
+							<p>Edward M. Brooks</p>
+							<small>Marketing House</small>
+							<div class="stars">
+								<img src="img/half_star.png" alt="">
+								<img src="img/half_star.png" alt="">
+								<img src="img/half_star.png" alt="">
+								<img src="img/half_star.png" alt="">
+								<img src="img/star.png" alt="">
 							</div>
 						</div>
 
@@ -356,35 +370,11 @@
 							<p>Edward M. Brooks</p>
 							<small>Marketing House</small>
 							<div class="stars">
-								<picture><source srcset="img/half_star.webp" type="image/webp"><img src="img/half_star.png" alt=""></picture>
-								<picture><source srcset="img/half_star.webp" type="image/webp"><img src="img/half_star.png" alt=""></picture>
-								<picture><source srcset="img/half_star.webp" type="image/webp"><img src="img/half_star.png" alt=""></picture>
-								<picture><source srcset="img/half_star.webp" type="image/webp"><img src="img/half_star.png" alt=""></picture>
-								<picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture>
-							</div>
-						</div>
-
-					</div>
-				</div>
-				<div class="review__item">
-					<div class="item__header">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus.
-							Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem,
-							elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus
-							leo. Praesent dui sapien, bibendum quis tempus dictum.</p>
-					</div>
-
-					<div class="item__footer">
-						<div class="item__center"></div>
-						<div class="footer__info">
-							<p>Edward M. Brooks</p>
-							<small>Marketing House</small>
-							<div class="stars">
-								<picture><source srcset="img/half_star.webp" type="image/webp"><img src="img/half_star.png" alt=""></picture>
-								<picture><source srcset="img/half_star.webp" type="image/webp"><img src="img/half_star.png" alt=""></picture>
-								<picture><source srcset="img/half_star.webp" type="image/webp"><img src="img/half_star.png" alt=""></picture>
-								<picture><source srcset="img/half_star.webp" type="image/webp"><img src="img/half_star.png" alt=""></picture>
-								<picture><source srcset="img/star.webp" type="image/webp"><img src="img/star.png" alt=""></picture>
+								<img src="img/half_star.png" alt="">
+								<img src="img/half_star.png" alt="">
+								<img src="img/half_star.png" alt="">
+								<img src="img/half_star.png" alt="">
+								<img src="img/star.png" alt="">
 							</div>
 						</div>
 
@@ -393,14 +383,14 @@
 
 			</div>
 		</section>
-		<section class="section__blog section">
+		<section class="section__blog section" id="blog">
 			<div class="container__blog container">
 				<div class="container__header">
-					<h1>READ ME</h1>
-					<p>Sometimes i write something smart</p>
+					<h1 class="anim-items">READ ME</h1>
+					<p class="anim-items">Sometimes i write something smart</p>
 				</div>
 				<div class="container__body">
-					<div class="item">
+					<div class="item anim-items">
 						<div class="item__header">
 							<div class="image"></div>
 							<div class="hover">
@@ -420,7 +410,7 @@
 							<button>READ MORE</button>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item anim-items">
 						<div class="item__header">
 							<div class="image"></div>
 							<div class="hover">
@@ -440,7 +430,7 @@
 							<button>READ MORE</button>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item anim-items">
 						<div class="item__header">
 							<div class="image"></div>
 							<div class="hover">
@@ -468,29 +458,7 @@
 		</section>
 	</main>
 
-	<footer class="footer">
-	<div class="footer__container container">
-		<div class="footer__info">
-			<p>© 2020 - Kirill Leontev</p>
-			<div class="images">
-				<a href=""><picture><source srcset="img/icons/fb.webp" type="image/webp"><img src="img/icons/fb.png" alt=""></picture></a>
-				<a href=""><picture><source srcset="img/icons/in.webp" type="image/webp"><img src="img/icons/in.png" alt=""></picture></a>
-				<a href=""><picture><source srcset="img/icons/instagram.webp" type="image/webp"><img src="img/icons/instagram.png" alt=""></picture></a>
-			</div>
-		</div>
-		<div class="footer__menu">
-			<nav>
-				<ul>
-					<li><a href="">Work</a> </li>
-					<li><a href="">About me</a> </li>
-					<li><a href="">Blog</a> </li>
-					<li><a href="">Contact</a> </li>
-					<li><button>Hire me</button></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-</footer>
+	@@include("_footer.html")
 
 
 
