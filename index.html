@@ -11,7 +11,37 @@
 
 <body>
 
-	@@include("_header.html")
+	<header class="header">
+	<div class="header__row">
+		<div class="header__logo">
+			<div class="logo__img anim-side"></div>
+			<div class="logo__text">
+				<p>Kirill Leontev</p>
+				<small>web developer</small>
+			</div>
+		</div>
+		<nav class="header__menu menu ">
+			<div class="menu__body">
+				<ul class="menu__list">
+					<li><a href="#portfolio" class="menu__link">work</a></li>
+					<li><a href="#about" class="menu__link">about me</a></li>
+					<li><a href="#blog" class="menu__link">blog</a></li>
+					<li><a href="#contact" class="menu__link">contact</a></li>
+				</ul>
+			</div>
+			<button class="slow__hover anim-side">
+				<span class="hover"></span>
+				<span class="text">hire me</span>
+			</button>
+			<div class="menu__icon icon__menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</nav>
+
+	</div>
+</header>
 	<main>
 		<section class="section__main section" id="main">
 			<div class="container__main container">
@@ -457,8 +487,29 @@
 			</div>
 		</section>
 	</main>
-
-	@@include("_footer.html")
+	<footer class="footer">
+	<div class="footer__container container">
+		<div class="footer__info">
+			<p>© 2020 - Kirill Leontev</p>
+			<div class="images">
+				<a href=""><picture><source srcset="img/icons/fb.webp" type="image/webp"><img src="img/icons/fb.png" alt=""></picture></a>
+				<a href=""><picture><source srcset="img/icons/in.webp" type="image/webp"><img src="img/icons/in.png" alt=""></picture></a>
+				<a href=""><picture><source srcset="img/icons/instagram.webp" type="image/webp"><img src="img/icons/instagram.png" alt=""></picture></a>
+			</div>
+		</div>
+		<div class="footer__menu">
+			<nav>
+				<ul>
+					<li><a href="#portfolio">Works</a> </li>
+					<li><a href="#about">About me</a> </li>
+					<li><a href="#blog">Blog</a> </li>
+					<li><a href="#contact">Contact</a> </li>
+					<li><button>Hire me</button></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</footer>
 
 
 
